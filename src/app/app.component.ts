@@ -1,3 +1,4 @@
+// src/app/app.component.ts
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
@@ -5,9 +6,15 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  template: `
+    <div class="app-container">
+      <router-outlet></router-outlet>
+    </div>
+  `,
+  styles: [`
+    .app-container {
+      padding: 20px;
+    }
+  `]
 })
-export class AppComponent {
-  title = 'ProjectBlue';
-}
+export class AppComponent {}

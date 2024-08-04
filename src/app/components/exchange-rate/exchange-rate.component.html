@@ -1,0 +1,49 @@
+<div class="container">
+    <mat-toolbar color="primary">
+      <span class="toolbar-title">Cotización del Dólar Estadounidense USDT - Mercado de Intercambio Directo</span>
+    </mat-toolbar>
+  
+    <mat-card class="exchange-card">
+      <mat-card-header>
+        <mat-card-title>Precio Compra/Venta</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="price-display">
+          <div class="price-item">
+            <span class="label">Precio de compra promedio:</span>
+            <span class="value" *ngIf="averageBuyPrice !== null">
+              {{ averageBuyPrice.toFixed(2) }} BOB
+            </span>
+            <span class="loading" *ngIf="averageBuyPrice === null && isLoadingBuy">Cargando...</span>
+            <span class="loading" *ngIf="averageBuyPrice === null && !isLoadingBuy">Sin datos disponibles</span>
+          </div>
+          <div class="price-item">
+            <span class="label">Precio de venta promedio:</span>
+            <span class="value" *ngIf="averageSellPrice !== null">
+              {{ averageSellPrice.toFixed(2) }} BOB
+            </span>
+            <span class="loading" *ngIf="averageSellPrice === null && isLoadingSell">Cargando...</span>
+            <span class="loading" *ngIf="averageSellPrice === null && !isLoadingSell">Sin datos disponibles</span>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  
+    <!-- Footer Disclaimer Section -->
+    <div class="footer-disclaimer">
+      <mat-card class="disclaimer-card">
+        <mat-card-content class="disclaimer">
+          <p>
+            Estas cifras proporcionan una estimación del valor atribuido al dólar USDT en relación con el Boliviano.
+            Esto se hace promediando el valor en USD de las criptomonedas.
+          </p>
+          <p>
+            <strong>**Nota importante**:</strong> Los valores presentados no reflejan las tasas de cambio oficiales del gobierno de Bolivia.
+            Estas cifras son únicamente para fines informativos y no deben considerarse como asesoramiento financiero oficial.
+            Los creadores de esta pagina no se responsabilizan por decisiones basadas en esta información. Los usuarios deben consultar fuentes oficiales para obtener las tasas de cambio reales y tomar decisiones informadas.
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  

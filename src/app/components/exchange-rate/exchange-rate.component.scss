@@ -1,0 +1,123 @@
+/* exchange-rate.component.scss */
+
+/* Main container */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+  }
+  
+  /* Toolbar styling */
+  mat-toolbar {
+    background-color: #1976d2;
+    color: white;
+  }
+  
+  /* Centered title within the toolbar */
+  .toolbar-title {
+    text-align: center;
+    flex: 1;
+  }
+  
+  /* Exchange card styling */
+  .exchange-card {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    flex-grow: 0; /* Prevents the card from stretching */
+  }
+  
+  /* Card header styling */
+  mat-card-header {
+    background-color: #f5f5f5;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  /* Title styling */
+  mat-card-title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  /* Card content styling */
+  mat-card-content {
+    padding-top: 10px;
+  }
+  
+  /* Price display container */
+  .price-display {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  /* Price item styling */
+  .price-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Label styling */
+  .label {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* Value styling */
+  .value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1976d2;
+  }
+  
+  /* Loading text styling */
+  .loading {
+    color: #757575;
+    font-style: italic;
+  }
+  
+  /* Footer disclaimer container */
+  .footer-disclaimer {
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    margin-top: auto;
+  }
+  
+  /* Disclaimer card styling */
+  .disclaimer-card {
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Disclaimer content styling */
+  .disclaimer {
+    font-size: 14px;
+    color: #757575;
+    line-height: 1.5;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Paragraph styling */
+  .disclaimer p {
+    margin-bottom: 10px;
+  }
+  
+  /* Important text styling */
+  .disclaimer strong {
+    color: #d32f2f;
+  }
+  
