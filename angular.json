@@ -37,6 +37,7 @@
             ],
             "scripts": []
           },
+          
           "configurations": {
             "production": {
               "budgets": [
@@ -74,11 +75,12 @@
           },
           "defaultConfiguration": "production"
         },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "browserTarget": "ProjectBlue:build"
-          },
+       "serve": {
+    "builder": "@angular-devkit/build-angular:dev-server",
+    "options": {
+      "browserTarget": "ProjectBlue:build",
+      "proxyConfig": "proxy.conf.json"
+    },
           "configurations": {
             "production": {
               "browserTarget": "ProjectBlue:build:production"
