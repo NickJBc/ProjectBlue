@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/api/*"
-  to = "https://p2p.binance.com/:splat"
+  to = "/.netlify/functions/binance-proxy"
   status = 200
   force = true
 
